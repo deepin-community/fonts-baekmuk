@@ -1,0 +1,3 @@
+ttf/*.ttf usr/share/fonts/truetype/baekmuk/
+debian/90-fonts-baekmuk.conf usr/share/fontconfig/conf.avail/
+debian/fonts-baekmuk.metainfo.xml usr/share/metainfo/

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="font">
+  <id>fonts-baekmuk</id>
+  <name>Baekmuk fonts</name>
+  <summary>Baekmuk series Korean fonts</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>OFL-1.1</project_license>
+  <description>
+    <p>
+ This is a set of Korean TrueType fonts, which contains 4 font
+ families; Dotum, Batang, Gulim and Headline.
+    </p>
+    <p>
+ Note that these fonts are not recommended for computer display.
+ Because they are not with reasonable hinting instructions, their CJK
+ glyphs (which usually have more strokes than Latin glyphs) are almost
+ not readable in most computer screens.
+    </p>
+  </description>
+  <provides>
+    <font>Baekmuk Batang</font>
+    <font>Baekmuk Dotum</font>
+    <font>Baekmuk Gulim</font>
+    <font>Baekmuk Headline</font>
+    <font>백묵 바탕</font>
+    <font>백묵 돋움</font>
+    <font>백묵 굴림</font>
+    <font>백묵 헤드라인</font>
+  </provides>
+  <url type="homepage">https://kldp.net/baekmuk/</url>
+  <update_contact>cwryu_AT_debian.org</update_contact>
+</component>

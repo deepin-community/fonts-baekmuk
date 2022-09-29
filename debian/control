@@ -1,0 +1,27 @@
+Source: fonts-baekmuk
+Section: fonts
+Priority: optional
+Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+Uploaders: Changwoo Ryu <cwryu@debian.org>
+Build-Depends: debhelper (>= 11~)
+Standards-Version: 4.1.5
+Homepage: https://kldp.net/baekmuk/
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-baekmuk.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-baekmuk
+
+Package: fonts-baekmuk
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Breaks: ttf-baekmuk (<< 2.2-4),
+        baekmuk-ttf
+Replaces: ttf-baekmuk (<< 2.2-4),
+	  baekmuk-ttf,
+Description: Baekmuk series Korean fonts
+ This is a set of Korean TrueType fonts, which contains 4 font
+ families; Dotum, Batang, Gulim and Headline.
+ .
+ Note that these fonts are not recommended for computer display.
+ Because they are not with reasonable hinting instructions, their CJK
+ glyphs (which usually have more strokes than Latin glyphs) are almost
+ not readable in most computer screens.

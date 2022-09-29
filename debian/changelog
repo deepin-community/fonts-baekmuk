@@ -1,0 +1,226 @@
+fonts-baekmuk (2.2-13) unstable; urgency=medium
+
+  * debian/control:
+    - Update Vcs-* to use salsa.debian.org
+    - Standards-Version: 4.1.5
+    - Update maintainer address to the debian-fonts mailing list
+    - Use https for the homepage URI
+  * debian/{compat,control}:
+    - Use debhelper 11
+  * debian/copyright:
+    - Use https for the copyright format URI
+  * debian/watch:
+    - Use https for the download URI
+  * Add AppStream metainfo
+
+ -- Changwoo Ryu <cwryu@debian.org>  Tue, 24 Jul 2018 20:19:58 +0800
+
+fonts-baekmuk (2.2-12) unstable; urgency=medium
+
+  * Drop ttf-baekmuk transitional package
+  * debian/control: Standards-Version: 3.9.8
+  * debian/control: Use https for Vcs-* URLs
+  * debian/{control,copyright,watch}: Update the upstream URL
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 26 Feb 2017 03:34:58 +0900
+
+fonts-baekmuk (2.2-11) unstable; urgency=medium
+
+  * Remove xz compression level
+    - For this package, the default xz level (-6) is not much different
+      with 7 or higher compression level, while requiring 56 MiB additional
+      space for decompression.
+  * Update the copyright format
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 27 Sep 2014 15:08:15 +0900
+
+fonts-baekmuk (2.2-10) unstable; urgency=medium
+
+  [ Changwoo Ryu ]
+  * Move font configs to /usr/share/fontconfig/conf.avail/
+  * Use dpkg-maintscript-helper for removing obsolete config files
+  * Add git-buildpackage config
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 10 May 2014 08:42:49 +0900
+
+fonts-baekmuk (2.2-9) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * Build-Depends on dpkg >= 1.16.2 for dpkg-deb -Sextreme option
+  * Simplify fontconfig config
+  * Add Multi-Arch: foreign
+  * Standards-Version: 3.9.5
+  * Add more package description
+  * Use Breaks instead of versioned Conflicts
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 15 Mar 2014 22:20:55 +0900
+
+fonts-baekmuk (2.2-8) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * Correct fontconfig conf with newer fontconfig (Closes: #687158)
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 06 Oct 2012 20:55:18 +0900
+
+fonts-baekmuk (2.2-7) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * Move to git
+  * Standards-Version: 3.9.3
+  * Use debhelper 9
+  * Use the copyright format 1.0
+  * Use xz to compress the binary packages
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 03 Jun 2012 02:58:19 +0900
+
+fonts-baekmuk (2.2-6) unstable; urgency=low
+
+  * Team upload
+  * No longer conflict with x-ttcidfont-conf. Closes: #660052
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 22 Feb 2012 08:21:37 +0100
+
+fonts-baekmuk (2.2-5) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * Set the priority of ttf-* package as extra
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 31 Dec 2011 21:46:00 +0900
+
+fonts-baekmuk (2.2-4) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * Renamed as fonts-baekmuk
+  * Standards-Version: 3.9.2
+
+ -- Changwoo Ryu <cwryu@debian.org>  Tue, 25 Oct 2011 12:19:01 +0900
+
+ttf-baekmuk (2.2-3) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * Fix debian/watch for the new KLDP.net site
+  * Maintained by the pkg-font team from now
+  * Move to "fonts" Section
+  * Standards-Version: 3.8.4
+  * Use debhelper 7
+  * use source format 3.0 (quilt)
+  * Use debhelper 7 style debian/rules
+  * Drop defoma (Closes: #511873)
+  * debian/copyright in DEP5 style
+
+ -- Changwoo Ryu <cwryu@debian.org>  Thu, 06 May 2010 01:43:38 +0900
+
+ttf-baekmuk (2.2-2) unstable; urgency=low
+
+  * Add watch file.
+  * Standards-Version: 3.7.3.
+  * Add new Homepage: field.
+  * Build-Depends: on debhelper which is used by clean target.
+  * Move COPYRIGHT to COPYRIGHT.en.txt and COPYRIGHT.ks to COPYRIGHT.ko.txt
+    to avoid confusion from Debian "copyright" file. And converted Korean doc
+    to UTF-8 encoding.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Wed, 23 Jan 2008 06:33:05 +0900
+
+ttf-baekmuk (2.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Updated upstream author and download URL.
+  * Install some docs.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon,  9 Aug 2004 15:55:57 +0900
+
+ttf-baekmuk (2.1-3) unstable; urgency=low
+
+  * Removed README.Debian really.  (Closes: #240731)
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon, 29 Mar 2004 23:42:05 +0900
+
+ttf-baekmuk (2.1-2) unstable; urgency=low
+
+  * Removed old Suggest: xfonts-ttf-baekmuk (Closes: 204669).
+  * Little bit more descriptive Description: (closes: 210054).
+  * Removed README.Debian -- there's no Debian specific information left.
+    The website on Baekmuk font is not provided anymore.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Fri, 12 Sep 2003 03:01:35 +0900
+
+ttf-baekmuk (2.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Fri,  4 Oct 2002 11:05:31 +0900
+
+ttf-baekmuk (2.0-8) unstable; urgency=low
+
+  * Removed old defoma stuffs in prerm/postinst which caused duplicated
+    defoma-font calls.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Thu, 13 Jun 2002 23:34:15 +0900
+
+ttf-baekmuk (2.0-7) unstable; urgency=low
+
+  * Changed section from 'text' to 'x11', for the consistency with other
+    ttf-*  packages.
+  * Used dh_installdefoma utility.  It leads build dependency on defoma.
+  * No more fixed ksc5601.1987-1 encoding.
+  * Added Serif/NoSerif/Fixed to the defoma hints.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Thu, 13 Jun 2002 19:15:07 +0900
+
+ttf-baekmuk (2.0-6) unstable; urgency=low
+
+  * Replaced the deprecated '<' operator with '<<' (Closes: #122683).
+  * Marked /etc/defoma/hints/ttf-baekmuk.hints as a conffile.
+  * Replaced Build-Depends: as Build-Depends-Indep: -- no arch dependent
+    build.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Fri,  7 Dec 2001 17:24:47 +0900
+
+ttf-baekmuk (2.0-5) unstable; urgency=low
+
+  * Added a useful "X-Spacing" defoma hint x-ttcidfont-conf 9.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Wed,  5 Dec 2001 16:26:59 +0900
+
+ttf-baekmuk (2.0-4) unstable; urgency=low
+
+  * Moved defoma unregistering to prerm.  The one in postrm caused no
+    hints file on purging, thus no defoma unregistering happened...
+  * Removed xfonts-baekmuk-ttf binary package -- using defoma and
+    x-ttcidfont-conf obsoletes it.
+  * Removed ISO8859-1 from batang Charset in the defoma hints.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 23 Sep 2001 03:40:22 +0900
+
+ttf-baekmuk (2.0-3) unstable; urgency=low
+
+  * Fixed typo in the defoma hints (Closes: #106990).
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon, 30 Jul 2001 11:13:21 +0900
+
+ttf-baekmuk (2.0-2) unstable; urgency=low
+
+  * Removed "Arphic" from Description:, which is a bug by
+    copy-paste-modify from xfonts-arphic-* packages.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Thu,  7 Jun 2001 04:06:22 +0900
+
+ttf-baekmuk (2.0-1) unstable; urgency=low
+
+  * Initial Release for the mainstream.
+  * Added xfonts-baekmuk-ttf for X.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Wed, 11 Apr 2001 04:33:50 +0900
+
+baekmuk-ttf (1.1-1) unstable-kr; urgency=low
+
+  * New upstream release.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat,  4 Sep 1999 14:58:53 +0900
+
+baekmuk-ttf (1.0-1) unstable-kr; urgency=low
+
+  * Initial Release.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat,  7 Aug 1999 22:57:59 +0900

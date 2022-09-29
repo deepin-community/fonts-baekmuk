@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_installdocs:
+	dh_installdocs
+	mv $(CURDIR)/debian/fonts-baekmuk/usr/share/doc/fonts-baekmuk/COPYRIGHT \
+	  $(CURDIR)/debian/fonts-baekmuk/usr/share/doc/fonts-baekmuk/COPYRIGHT.en.txt
+	iconv -f EUC-KR -t UTF-8 \
+	  < $(CURDIR)/debian/fonts-baekmuk/usr/share/doc/fonts-baekmuk/COPYRIGHT.ks \
+	  > $(CURDIR)/debian/fonts-baekmuk/usr/share/doc/fonts-baekmuk/COPYRIGHT.ko.txt
+	rm $(CURDIR)/debian/fonts-baekmuk/usr/share/doc/fonts-baekmuk/COPYRIGHT.ks
